@@ -4,9 +4,12 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageButton;
 //Name: Muhammad Saad
 //Student#: N01366618
 //Course: CENG258
@@ -17,6 +20,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class InputFragment extends Fragment {
+    ImageButton imageButton;
+    EditText editText;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -62,6 +67,42 @@ public class InputFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_input, container, false);
+        View view = inflater.inflate(R.layout.fragment_input, container, false);
+        imageButton = (ImageButton) view.findViewById(R.id.muhammadimageButton);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                rotateImages();
+            }
+        });
+        return view;
+    }
+
+    private void rotateImages() {
+        imageButton.setImageResource(R.drawable.ic_input);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imageButton.setImageResource(R.drawable.ic_draw);
+                imageButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        imageButton.setImageResource(R.drawable.ic_security);
+                        imageButton.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                imageButton.setImageResource(R.drawable.ic_rotate);
+                                imageButton.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        rotateImages();
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        });
     }
 }

@@ -7,7 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+//Name: Muhammad Saad
+//Student#: N01366618
+//Course: CENG258
+//Section: RNA
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link SecuitiyFragment#newInstance} factory method to

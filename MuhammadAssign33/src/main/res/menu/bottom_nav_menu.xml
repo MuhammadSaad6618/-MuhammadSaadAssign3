@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/muhammadInput"
+        android:title="Input"
+        android:icon="@drawable/ic_input"/>
+    <item
+        android:id="@+id/muhammadHome"
+        android:title="Draw"
+        android:icon="@drawable/ic_draw"/>
+    <item
+        android:id="@+id/muhammadAbout"
+        android:title="Security"
+        android:icon="@drawable/ic_security"/>
+    <item
+        android:id="@+id/muhammadRotate"
+        android:title="Rotate"
+        android:icon="@drawable/ic_rotate"/>
 </menu>

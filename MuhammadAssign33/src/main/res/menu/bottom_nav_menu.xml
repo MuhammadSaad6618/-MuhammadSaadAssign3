@@ -5,11 +5,11 @@
         android:title="Input"
         android:icon="@drawable/ic_input"/>
     <item
-        android:id="@+id/muhammadHome"
+        android:id="@+id/muhammadDraw"
         android:title="Draw"
         android:icon="@drawable/ic_draw"/>
     <item
-        android:id="@+id/muhammadAbout"
+        android:id="@+id/muhammadSecuirty"
         android:title="Security"
         android:icon="@drawable/ic_security"/>
     <item

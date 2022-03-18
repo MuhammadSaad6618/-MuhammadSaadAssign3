@@ -4,9 +4,11 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.telecom.TelecomManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 //Name: Muhammad Saad
 //Student#: N01366618
 //Course: CENG258
@@ -17,6 +19,7 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class SecuitiyFragment extends Fragment {
+    TextView textView;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -62,6 +65,11 @@ public class SecuitiyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_secuitiy, container, false);
+       View view =  inflater.inflate(R.layout.fragment_secuitiy, container, false);
+        //textView = view.findViewById(R.id.muhammadtv5);
+       // Bundle bundle = this.getArguments();
+        //String data = bundle.getString("key");
+        //textView.setText(data);
+        return view;
     }
 }

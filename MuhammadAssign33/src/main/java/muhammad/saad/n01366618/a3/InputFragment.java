@@ -80,6 +80,11 @@ public class InputFragment extends Fragment {
 
     private void rotateImages() {
         imageButton.setImageResource(R.drawable.ic_input);
+        //Bundle bundle = new Bundle();
+        //bundle.putString("key",editText.getText().toString());
+        //SecuitiyFragment secuitiyFragment = new SecuitiyFragment();
+        //secuitiyFragment.setArguments(bundle);
+        //Im trying to pass data entered from edit text to 3rd tabs textView but app keeps crashing. I tried my best to avoid the crash.
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

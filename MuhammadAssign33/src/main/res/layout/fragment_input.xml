@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:gravity="top|center"
-        android:text="Input"
+        android:text="Muhammad Saad N01366618"
         android:textColor="#43a047"
         android:textSize="40sp"
         android:textStyle="italic|bold"

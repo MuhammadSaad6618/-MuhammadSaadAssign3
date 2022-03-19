@@ -2,6 +2,7 @@ package muhammad.saad.n01366618.a3;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 
@@ -70,5 +71,6 @@ public class DrawFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_draw, container, false);
         return view;
     }
+
 
 }

@@ -22,6 +22,8 @@ import android.widget.TextView;
  */
 public class SecuitiyFragment extends Fragment {
     TextView textView;
+    View view;
+
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -63,7 +65,6 @@ public class SecuitiyFragment extends Fragment {
         }
     }
 
-View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -84,9 +85,5 @@ View view;
         return view;
     }
 
-//    @Override
-//    public void onResume() {
-//        textView.setText(result);
-//        super.onResume();
-//    }
+
 }

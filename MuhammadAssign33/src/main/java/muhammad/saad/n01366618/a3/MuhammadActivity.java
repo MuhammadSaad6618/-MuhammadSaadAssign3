@@ -1,8 +1,10 @@
 package muhammad.saad.n01366618.a3;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -48,6 +50,18 @@ public class MuhammadActivity extends AppCompatActivity {
             }
             return false;
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder((this)).setMessage("Muhammad Saad, N01366618 Do you want to exit the app?")
+                .setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        }).setNegativeButton("No",null)
+                .show();
     }
 }
 

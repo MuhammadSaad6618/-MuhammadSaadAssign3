@@ -14,11 +14,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 //Section: RNA
 
 public class MuhammadActivity extends AppCompatActivity {
-   private BottomNavigationView  bottomNavigationView;
+    private BottomNavigationView bottomNavigationView;
     InputFragment inputFragment = new InputFragment();
-     DrawFragment drawFragment = new DrawFragment();
-     SecuitiyFragment secuitiyFragment = new SecuitiyFragment();
-     RotateFragment rotateFragment = new RotateFragment();
+    DrawFragment drawFragment = new DrawFragment();
+    SecuitiyFragment secuitiyFragment = new SecuitiyFragment();
+    RotateFragment rotateFragment = new RotateFragment();
 
 
     @Override
@@ -29,7 +29,7 @@ public class MuhammadActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.muhammadbottomNavigationView);
         bottomNavigationView.setOnItemSelectedListener(item -> {
 
-            switch (item.getItemId()){
+            switch (item.getItemId()) {
                 case R.id.muhammadInput:
                     getSupportFragmentManager().beginTransaction().replace(R.id.muhammadflFragment, inputFragment).commit();
                     return true;
@@ -49,6 +49,6 @@ public class MuhammadActivity extends AppCompatActivity {
             return false;
         });
     }
-    }
+}
 
 

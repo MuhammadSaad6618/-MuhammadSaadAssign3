@@ -22,6 +22,8 @@ import android.widget.ImageButton;
 public class InputFragment extends Fragment {
     ImageButton imageButton;
     EditText editText;
+    int imgNum = 0;
+    int[] images = {R.drawable.ic_input,R.drawable.ic_draw,R.drawable.ic_rotate,R.drawable.ic_security};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -68,46 +70,26 @@ public class InputFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_input, container, false);
+        editText = view.findViewById(R.id.muhammadedET);
         imageButton = (ImageButton) view.findViewById(R.id.muhammadimageButton);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                rotateImages();
+            public void onClick(View v) {
+          Bundle result = new Bundle();
+          String input = editText.getText().toString();
+          result.putString("key",input);
+          getParentFragmentManager().setFragmentResult("requestkey",result);
+
+            imageButton.setImageResource(images[imgNum]);
+            imgNum++;
+            if(imgNum == 4)
+                imgNum = 0;
+
             }
         });
         return view;
     }
 
-    private void rotateImages() {
-        imageButton.setImageResource(R.drawable.ic_input);
-        //Bundle bundle = new Bundle();
-        //bundle.putString("key",editText.getText().toString());
-        //SecuitiyFragment secuitiyFragment = new SecuitiyFragment();
-        //secuitiyFragment.setArguments(bundle);
-        //Im trying to pass data entered from edit text to 3rd tabs textView but app keeps crashing. I tried my best to avoid the crash.
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                imageButton.setImageResource(R.drawable.ic_draw);
-                imageButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        imageButton.setImageResource(R.drawable.ic_security);
-                        imageButton.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                imageButton.setImageResource(R.drawable.ic_rotate);
-                                imageButton.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View view) {
-                                        rotateImages();
-                                    }
-                                });
-                            }
-                        });
-                    }
-                });
-            }
-        });
-    }
+
+
 }

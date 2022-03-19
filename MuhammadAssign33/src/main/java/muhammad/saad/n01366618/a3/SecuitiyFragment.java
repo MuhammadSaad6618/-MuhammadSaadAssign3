@@ -2,7 +2,9 @@ package muhammad.saad.n01366618.a3;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
 
 import android.telecom.TelecomManager;
 import android.view.LayoutInflater;
@@ -20,6 +22,7 @@ import android.widget.TextView;
  */
 public class SecuitiyFragment extends Fragment {
     TextView textView;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -51,7 +54,6 @@ public class SecuitiyFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,15 +63,30 @@ public class SecuitiyFragment extends Fragment {
         }
     }
 
+View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-       View view =  inflater.inflate(R.layout.fragment_secuitiy, container, false);
-        //textView = view.findViewById(R.id.muhammadtv5);
-       // Bundle bundle = this.getArguments();
-        //String data = bundle.getString("key");
-        //textView.setText(data);
+        getParentFragmentManager().setFragmentResultListener("requestkey", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle bundle) {
+                String result = bundle.getString("key");
+                textView = view.findViewById(R.id.muhammadtv5);
+                textView.setText(result);
+
+            }
+        });
+
+
+        view =  inflater.inflate(R.layout.fragment_secuitiy, container, false);
+
         return view;
     }
+
+//    @Override
+//    public void onResume() {
+//        textView.setText(result);
+//        super.onResume();
+//    }
 }

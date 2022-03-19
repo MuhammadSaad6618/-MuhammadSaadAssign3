@@ -24,6 +24,8 @@ import android.widget.ImageView;
  */
 public class DrawFragment extends Fragment {
     ImageView imageView;
+    private CanvasView canvasView;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -70,6 +72,8 @@ public class DrawFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_draw, container, false);
+        canvasView = (CanvasView) view.findViewById(R.id.signature_canvas);
+
         return view;
     }
 

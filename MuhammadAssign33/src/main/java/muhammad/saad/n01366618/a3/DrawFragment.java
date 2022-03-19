@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 //Name: Muhammad Saad
 //Student#: N01366618
@@ -25,6 +26,7 @@ import android.widget.ImageView;
 public class DrawFragment extends Fragment {
     ImageView imageView;
     private CanvasView canvasView;
+    Button button;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -72,7 +74,15 @@ public class DrawFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_draw, container, false);
-        canvasView = (CanvasView) view.findViewById(R.id.signature_canvas);
+        canvasView = (CanvasView) view.findViewById(R.id.muhammadsignature_canvas);
+        button = view.findViewById(R.id.muhammadButtonClear);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                canvasView.wipeCanvas();
+            }
+        });
+
 
         return view;
     }

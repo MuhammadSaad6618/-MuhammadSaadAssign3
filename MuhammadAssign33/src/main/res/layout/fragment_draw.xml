@@ -12,10 +12,11 @@
     tools:context=".MuhammadActivity">
 
     <muhammad.saad.n01366618.a3.CanvasView
-        android:id="@+id/signature_canvas"
+        android:id="@+id/muhammadsignature_canvas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="#808080 " />
+        android:textColor="#808080 "
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/muhammadtv1"
@@ -40,5 +41,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_imgbtn" />
+
+    <Button
+        android:id="@+id/muhammadButtonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="157dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

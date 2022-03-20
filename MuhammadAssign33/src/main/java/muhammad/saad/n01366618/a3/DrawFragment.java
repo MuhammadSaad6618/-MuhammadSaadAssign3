@@ -27,6 +27,7 @@ public class DrawFragment extends Fragment {
     ImageView imageView;
     private CanvasView canvasView;
     Button button;
+    Canvas canvas;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -83,9 +84,9 @@ public class DrawFragment extends Fragment {
             }
         });
 
-
         return view;
     }
+
 
 
 }

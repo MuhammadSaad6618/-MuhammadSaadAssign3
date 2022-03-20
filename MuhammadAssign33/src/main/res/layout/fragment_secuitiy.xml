@@ -9,31 +9,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0000FF"
+    android:id="@+id/muhammadLayout"
     tools:context=".MuhammadActivity">
 
-    <TextView
-        android:id="@+id/muhammadtv4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="security"
-        android:textColor="#43a047"
-        android:textSize="40sp"
-        android:textStyle="italic|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/muhammadtv5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="144dp"
         android:text="TextView"
         android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="192dp"
+        android:text="This is 3rd tab"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/muhammadSecurityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="341dp"
+        android:text="Click to call me, need Permission first"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

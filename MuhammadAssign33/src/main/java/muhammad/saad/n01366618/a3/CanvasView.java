@@ -2,6 +2,7 @@ package muhammad.saad.n01366618.a3;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -54,6 +55,7 @@ public class CanvasView extends View {
 
         // set background color to blue
         canvas.drawColor(Color.YELLOW);
+
 
         // Draw circle
 //        Paint circlePaint = new Paint();

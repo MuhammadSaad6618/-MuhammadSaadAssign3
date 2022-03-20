@@ -23,7 +23,7 @@ public class InputFragment extends Fragment {
     ImageButton imageButton;
     EditText editText;
     int imgNum = 0;
-    int[] images = {R.drawable.ic_input,R.drawable.ic_draw,R.drawable.ic_rotate,R.drawable.ic_security};
+    int[] images = {R.drawable.first,R.drawable.gpdraw,R.drawable.ekko,R.drawable.teemo2};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

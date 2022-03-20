@@ -1,11 +1,14 @@
 package muhammad.saad.n01366618.a3;
 
+import static android.graphics.Typeface.SERIF;
 import static androidx.core.content.ContextCompat.checkSelfPermission;
 
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -35,6 +38,7 @@ public class SecuitiyFragment extends Fragment {
     TextView textView;
     View view;
     Button button;
+    TextView textView2;
     private static final String TAG = "Calling";
     final private int REQUEST_CODE_ASK_PERMISSIONS = 125;
     private static final String LOG = SecuitiyFragment.class.getSimpleName();
@@ -94,6 +98,10 @@ public class SecuitiyFragment extends Fragment {
         });
 
         view = inflater.inflate(R.layout.fragment_secuitiy, container, false);
+        Paint paint = null;
+        textView2 = view.findViewById(R.id.muhammadTextView2);
+        textView2.setTypeface(SERIF);
+        textView2.setPaintFlags(paint.STRIKE_THRU_TEXT_FLAG|Paint.ANTI_ALIAS_FLAG);
         button = view.findViewById(R.id.muhammadSecurityButton);
 
 

@@ -1,5 +1,8 @@
 package muhammad.saad.n01366618.a3;
-
+//Name: Muhammad Saad
+//Student#: N01366618
+//Course: CENG258
+//Section: RNA
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

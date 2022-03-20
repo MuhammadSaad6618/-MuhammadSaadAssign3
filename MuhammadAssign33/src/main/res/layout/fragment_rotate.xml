@@ -19,7 +19,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="28dp"
         android:rotation="-45"
-        android:text="Muhammad"
+        android:text="@string/fourthfragtv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:rotation="45"
-        android:text="Saad"
+        android:text="@string/fourthfragtv2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="152dp"
-        android:text="Planet rotation around Sun"
+        android:text="@string/fourthfragtv3"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -9,11 +9,11 @@
     <string name="frag1tv">Draw!</string>
     <string name="firstfragbt">Clear</string>
     <string name="secondfragtv">Muhammad Saad N01366618</string>
-    <string name="secondfraget">enter password</string>
+    <string name="secondfraget">Entrer le mot de passe</string>
     <string name="fourthfragtv">Muhammad</string>
     <string name="fourthfragtv2">Saad</string>
-    <string name="fourthfragtv3">Planet rotation around Sun</string>
+    <string name="fourthfragtv3">Rotation de la planète autour du Soleil</string>
     <string name="thirdfragtv">TextView</string>
     <string name="thirdfragtv2">This is 3rd tab</string>
-    <string name="thirdfragbt">Click to call me, need Permission first</string>
+    <string name="thirdfragbt">Cliquez pour mappeler, besoin dautorisation dabord</string>
 </resources>
